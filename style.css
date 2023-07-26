@@ -1,0 +1,235 @@
+:root{
+    --ColorAcqua:rgb(46, 196, 182);
+    --ColorOrange:rgb(255, 159, 26);
+    --ColorWhite: rgb(230, 230, 230);
+    
+
+}
+
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+.tx-Acqua{
+    color: var(--ColorAcqua);
+}
+.tx-Orange{
+    color: var(--ColorOrange);
+}
+.tx-White{
+    color: var(--ColorWhite);
+}
+.bg-Acqua{
+    background-color: var(--ColorAcqua);
+}
+.bg-Orange{
+    background-color: (var(--ColorOrange));
+}
+.bg-White{
+    background-color: var(--ColorWhite);
+    
+}
+
+
+
+/* NAVBAR STYLE */
+
+.navbar{
+    
+    background-color: var(--ColorAcqua);
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+    transition: .5s;
+}
+.navbarBlur{
+    
+    background-color: rgba(46, 196, 181, 0.5);
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+    transition: .5s;
+}
+.navbar-toggler{
+    border: none !important;
+    
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+   
+  }
+
+.navLogo{
+    height: 50px;
+    padding-right: 10px;
+}
+.iconNav{
+    border-left: 2px solid var(--ColorWhite);
+}
+.iconNavCustom{
+    color: var(--ColorOrange);
+    text-shadow: 1px -1px 0px rgba(96, 96, 96, 1);
+   
+}
+.punto{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: var(--ColorOrange);
+    font-weight: bold;
+}
+
+
+
+/* HEADER STYLE */
+
+
+.headerCustom{
+    width: 100%;
+    height: 100vh;
+    background:url(./media/sfondo_header4.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    display: flex;
+}
+header{
+    cursor: pointer;
+    
+}
+
+.titolo{
+    font-size: 80px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-shadow: 3px 8px 15px black;
+    -webkit-text-stroke: 5px ;
+
+}
+.titolo2{
+    margin-top: -7px;
+    font-size: 80px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-shadow: 3px 8px 15px black;
+
+}
+.punto2{
+    margin: 0;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    color: var(--ColorOrange);
+    font-weight: bold;
+
+}
+
+.box{
+    color: var(--ColorWhite);
+    padding-top: 35px;
+    margin-top: 200px ;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 160, 26,.88);
+    border-radius: 50%;
+    border: 3px solid var(--ColorWhite);
+}
+
+.box:hover{
+    background-color: rgba(46, 196, 182,.88);
+}
+.titoloCentrale{
+    display: flex;
+}
+
+/* MAIN STYLE */
+.puntoMain{
+    margin: 0;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    color: var(--ColorOrange);
+    font-weight: bold;
+    
+}
+.titleMain{
+    font-size: 50px;
+    border-bottom: 10px solid var(--ColorOrange);
+    margin-bottom: 100px;
+}
+
+
+.card{
+    margin-top: 50px;
+    border-radius: 30px;
+    border: none;
+    width: 350px;
+    height: 400px;
+    padding: px;
+    background-color: var(--ColorWhite);
+    position: relative;box-shadow: 0px 10px 10px 0px rgb(167, 166, 166);
+}
+.card:hover{
+    
+    transition: .3s;
+}
+.miniCard{
+    padding-top:30px;
+    padding-left: 28px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top:-50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--ColorOrange);
+    border-radius: 30px;
+}
+.buttonCard{
+    color: white;
+    margin-top: 0px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--ColorAcqua);
+    border-radius: 10px;
+}
+.buttonCard:hover{
+    transition: .3s;
+    animation: zoom 1s ease-in-out;
+    animation-fill-mode: both;
+    background-color: rgba(46, 196, 182,.8) ;
+}
+
+
+
+
+
+@keyframes zoom {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .titolo,.titolo2 {
+      font-size: 50px;
+    }
+    .titoloCentrale{
+        text-align: center;
+        display: block;
+    }
+  }
