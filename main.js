@@ -2,10 +2,13 @@
 let navbar = document.querySelector(".navbar");
 let titleMain = document.querySelector(".due");
 let navitem = document.querySelectorAll(".nav-link")
-
+const counters = document.querySelectorAll('.value');
+const speed = 1;
 
 window.addEventListener("scroll",()=>{
     let scrollPage = window.scrollY;
+    
+
 
     if(scrollPage > 0){
         navbar.classList.remove("m-4")
@@ -21,11 +24,13 @@ window.addEventListener("scroll",()=>{
 
     }
      
-
-
-    
-
+    if(scrollPage>850){
+        
+    }
 })
+
+
+
 
 
 
