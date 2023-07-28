@@ -7,9 +7,14 @@
     <!-- FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- CSS AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS ICONBOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- MY CSS -->
@@ -19,20 +24,23 @@
     <!-- INIZIO NAVBAR -->
     <nav class="navbar m-4 navbar-expand-lg fixed-top">
         <div class="container-fluid">
-          <img class="navLogo" src="./media/Logo.png" alt=""><h2 class="mt-1 me-5 text-white">Presto<p class="punto d-inline-block">.</p>it</h2>
+          <img class="navLogo" src="./media/LogoWhite.png" alt=""><h2 class="mt-1 me-5 textLogo">Presto<p class="punto d-inline-block">.</p>it</h2>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
-                <a class="nav-link tx-White" aria-current="page" href="#">Home</a>
+                <a class="nav-link tx-White" aria-current="page" href="#">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link tx-White" href="#">Shop</a>
+                <a class="nav-link tx-White" aria-current="page" href="#">LA FLOTTA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link tx-White" href="#">Contatti</a>
+                <a class="nav-link tx-White" href="#">PREVENTIVO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tx-White" href="#">NOLEGGIA</a>
               </li>
             </ul>
             <div class=" d-flex" >
@@ -48,53 +56,81 @@
         <div class="headerCustom align-items-center">
             <div class="container">
                 <div class="titoloCentrale">
-                    <h1 class="titolo tx-White">PRESTO</h1><div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <p class="titolo2 tx-Orange">.NOLEGGIO</p>
+                    <h1 class="titolo tx-White">PRESTO</h1>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel" >
+                      <div class="carousel-inner ">
+                          <div class="carousel-item active" data-bs-interval="2000">
+                            <p id="testoprova"class="titolo2 tx-Orange">.NOLEGGIO</p>
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item" data-bs-interval="2000">
                             <p class="titolo2 tx-Orange">.QUALITA`</p>
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item" data-bs-interval="2000">
                             <p class="titolo2 tx-White"><p2 class="punto2 d-inline-block">.</p2>IT</p>
                           </div>
                         </div>
                     
                       </div>
                 </div>
-                
-                
             </div>
-            
-            
         </div>
+        <div class="separatore"></div>
       </header>
 
     <!-- FINE HEAER -->
     <!-- INIZIO MAIN -->
     <main>
-        <span class="container-fluid d-flex justify-content-center" data-aos="fade-right" 
+
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-11 col-md-2 containerMainSection2 ">
+            <div class="row contentCard justify-content-center align-items-center">
+              <div class="col-6 elementCircleCard text-center m-0 p-0 flex-column"><i class="bi tx-BlueLux iconCircle bi-people p-0 m-0"></i><p class="textIconCircle">Clienti</p></div>
+              <div class="col-6 d-flex"><h3 class="fs-1">+</h3><h3 id="numero1" class="fs-1" valore="1000">0</h3></div>
+            </div>
+          </div>
+          <div class="col-11 col-md-2 containerMainSection2 ">
+            <div class="row contentCard justify-content-center align-items-center">
+              <div class="col-6 elementCircleCard text-center m-0 p-0 flex-column"><i class="bi tx-BlueLux iconCircle bi-star p-0 m-0"></i><p class="textIconCircle">FeedBack</p></div>
+              <div class="col-6 d-flex"><h3 class="fs-1">+</h3><h3 id="numero2" class="fs-1" valore="1000">0</h3></div>
+            </div>
+          </div>
+          <div class="col-11 col-md-2 containerMainSection2 ">
+            <div class="row contentCard justify-content-center align-items-center">
+              <div class="col-6 elementCircleCard text-center m-0 p-0 flex-column"><i class="bi tx-BlueLux iconCircle bi-geo p-0 m-0"></i><p class="textIconCircle">Rotte</p></div>
+              <div class="col-6 d-flex"><h3 class="fs-1">+</h3><h3 id="numero3" class="fs-1" valore="100">0</h3></div>
+            </div>
+          </div>
+          <div class="col-11 col-md-2 containerMainSection2 ">
+            <div class="row contentCard justify-content-center align-items-center">
+              <div class="col-6 elementCircleCard text-center m-0 p-0 flex-column"><iconify-icon class="iconCircle mt-2 mb-1" icon="ph:boat-light" style="color: #172738;" width="30px"></iconify-icon><p class="textIconCircle">Barche</p></div>
+              <div class="col-6 d-flex"><h3 class="fs-1">+</h3><h3 id="numero4" class="fs-1" valore="5000">0</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- <span class="container-fluid d-flex justify-content-center" data-aos="fade-right" 
         data-aos-delay="200" data-aos-duration="3000">
-            <h2 class="text-center titleMain rounded-1"><p class="puntoMain d-inline-block">.</p>INFO  </h2>
+            <h2 class="text-center titleMain rounded-1"><p class="puntoMain d-inline-block lead">.</p>INFO</h2>
         </span>
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-4 card" data-aos="flip-right" data-aos-duration="2000" 
                 data-aos-delay="400">
-                    <div class="miniCard"><i class="fa-solid fa-2xl fa-van-shuttle"></i></div>
+                    <div class="miniCard"><i class="fa-solid fa-2xl fa-ship"></i></div>
                     <div class="pt-5">
                         <h2 class="mt-3">Flotta</h2>
                         <div class="row justify-content-center">
-                          <div class="col-2 value" akhi="10">10</div>
+                          <div id="numero1" class="col-2 value" valore="10">0</div>
                           <div class="col-9 textArticle">Gommoni</div>
                         </div>
                         <div class="row justify-content-center">
-                          <div class="col-2 value" akhi="7">7</div>
+                          <div id="numero2" class="col-2 value" valore="7">0</div>
                           <div class="col-9 textArticle">Barche a Motore</div>
                         </div>
                         <div class="row justify-content-center">
-                          <div class="col-2 value" >15</div>
+                          <div id="numero3" class="col-2 value" valore="15">0</div>
                           <div class="col-9 textArticle">Moto D'Acqua</div>
                         </div>
                         <div class="text-center">
@@ -115,18 +151,81 @@
                 </div>
                 <div class="col-4 card" data-aos="flip-right" data-aos-duration="2000" 
                 data-aos-delay="800"><div class="miniCard">
-                    <i class="fa-solid fa-2xl fa-store"></i></div>
+                    <i class="fa-solid fa-2xl fa-bag-shopping"></i></div>
                     <div class="pt-5">
-                        <h2 class="mt-4">ShopOnline</h2>
+                        <h2 class="mt-4">Noleggia</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat veniam alias sed eum praesentium esse similique vel repellat. Earum quasi laudantium necessitatibus eius corrupti architecto deserunt nulla maiores consequuntur natus.</p>
                         <div class="text-center d-flex mt-5 pt-4">
                             <button class="buttonCard">Scopri di più</button>
                         </div>
-                        
                     </div>
                 </div>
             </div>
+        </div> -->
+        <div class="container-fluid">
+          
         </div>
+        <div class="container-fluid ">
+          
+          <div class="row section2 justify-content-start align-items-center mb-5">
+            <div class="col-12 col-md-3 ms-md-5 boxRicerca">
+            <h2 class="citazione">Noleggio Barche</h2>
+            <p class="text-center">Confronta oltre 5.000 barche e prenota in tutto il mondo.</p>
+              <div class="mb-3 pb-1">
+                <div class="input-group mt-0">
+                  <label class="input-group-text bg-white border-0">
+                    <svg class="text-secondary" width="16" height="16" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.649994C8.95533 0.649994 6.03535 1.85949 3.88243 4.01241C1.72952 6.16533 0.52002 9.08531 0.52002 12.13C0.52002 19.88 10.64 28.63 11.07 29.01C11.3291 29.2318 11.6589 29.3537 12 29.3537C12.3411 29.3537 12.6709 29.2318 12.93 29.01C13.44 28.63 23.48 19.88 23.48 12.13C23.48 9.08531 22.2705 6.16533 20.1176 4.01241C17.9647 1.85949 15.0447 0.649994 12 0.649994ZM12 26C8.94002 23.13 3.39002 16.94 3.39002 12.15C3.39002 9.86648 4.29714 7.67649 5.91183 6.0618C7.52652 4.44712 9.71651 3.53999 12 3.53999C14.2835 3.53999 16.4735 4.44712 18.0882 6.0618C19.7029 7.67649 20.61 9.86648 20.61 12.15C20.61 16.92 15.06 23.12 12 26ZM12 6.40999C10.8648 6.40999 9.75498 6.74664 8.81105 7.37736C7.86711 8.00808 7.1314 8.90454 6.69695 9.95339C6.2625 11.0022 6.14883 12.1564 6.37031 13.2698C6.59179 14.3833 7.13847 15.406 7.94123 16.2088C8.74398 17.0115 9.76675 17.5582 10.8802 17.7797C11.9937 18.0012 13.1478 17.8875 14.1966 17.4531C15.2455 17.0186 16.1419 16.2829 16.7727 15.339C17.4034 14.395 17.74 13.2853 17.74 12.15C17.7427 11.3945 17.5961 10.646 17.3088 9.94725C17.0216 9.24853 16.5992 8.61339 16.0659 8.07827C15.5326 7.54314 14.899 7.11854 14.2013 6.82883C13.5035 6.53912 12.7555 6.38999 12 6.38999V6.40999ZM12 15C11.4324 15 10.8775 14.8317 10.4055 14.5163C9.93356 14.201 9.56571 13.7527 9.34848 13.2283C9.13126 12.7039 9.07443 12.1268 9.18517 11.5701C9.29591 11.0134 9.56925 10.502 9.97062 10.1006C10.372 9.69922 10.8834 9.42588 11.4401 9.31514C11.9968 9.2044 12.5739 9.26124 13.0983 9.47846C13.6227 9.69568 14.071 10.0635 14.3863 10.5355C14.7017 11.0075 14.87 11.5624 14.87 12.13C14.87 12.8912 14.5676 13.6212 14.0294 14.1594C13.4912 14.6976 12.7612 15 12 15Z" fill="currentColor"></path></svg>
+                  </label>
+                  <div class="position-relative form-control p-0 border-0">
+                      <input data-v-d4013c7e="" type="text" placeholder="Dove vuoi noleggiare?" aria-label="Dove vuoi noleggiare?" autocomplete="neverautocomplete" class="form-control border-left-0 border-0 ">
+                  </div>
+                </div>
+              </div>
+              <!-- INIZIO SECONDO INPUT -->
+              <div class="mb-3 pb-1">
+                <div class="input-group">
+                  <label class="input-group-text bg-white border-0">
+                    <svg class="text-secondary" width="16" height="16" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.0499 3.52H22.1799V2.08C22.1499 1.7201 21.9857 1.38463 21.7199 1.14012C21.4541 0.895606 21.1061 0.759895 20.745 0.759895C20.3838 0.759895 20.0358 0.895606 19.77 1.14012C19.5042 1.38463 19.34 1.7201 19.3099 2.08V3.52H10.69V2.08C10.6599 1.7201 10.4957 1.38463 10.2299 1.14012C9.96408 0.895606 9.61611 0.759895 9.25495 0.759895C8.89379 0.759895 8.54582 0.895606 8.28003 1.14012C8.01423 1.38463 7.85002 1.7201 7.81995 2.08V3.52H4.99995C3.86033 3.52264 2.76814 3.97652 1.96231 4.78236C1.15648 5.58819 0.702592 6.68038 0.699951 7.82V25.05C0.702592 26.1896 1.15648 27.2818 1.96231 28.0876C2.76814 28.8935 3.86033 29.3474 4.99995 29.35H25.0999C26.2396 29.3474 27.3318 28.8935 28.1376 28.0876C28.9434 27.2818 29.3973 26.1896 29.4 25.05V7.82C29.3987 7.25146 29.2849 6.6888 29.0652 6.16442C28.8455 5.64004 28.5243 5.16431 28.1199 4.76462C27.7156 4.36493 27.2362 4.04919 26.7093 3.83558C26.1824 3.62198 25.6185 3.51472 25.0499 3.52ZM26.4799 25.05C26.4799 25.4293 26.3293 25.793 26.0611 26.0612C25.7929 26.3293 25.4292 26.48 25.0499 26.48H4.99995C4.62069 26.48 4.25697 26.3293 3.98879 26.0612C3.72061 25.793 3.56995 25.4293 3.56995 25.05V15H26.5699L26.4799 25.05ZM26.4799 12.13H3.47995V7.82C3.47956 7.62439 3.51931 7.43078 3.59674 7.25115C3.67416 7.07151 3.78762 6.90967 3.93009 6.77564C4.07256 6.6416 4.24102 6.53822 4.42504 6.47189C4.60906 6.40556 4.80473 6.37769 4.99995 6.39H7.86995V7.82C7.85337 8.01852 7.87815 8.21832 7.94273 8.40676C8.00732 8.59521 8.1103 8.76821 8.24517 8.91482C8.38004 9.06143 8.54387 9.17846 8.72628 9.25851C8.9087 9.33856 9.10574 9.3799 9.30495 9.3799C9.50416 9.3799 9.7012 9.33856 9.88362 9.25851C10.066 9.17846 10.2299 9.06143 10.3647 8.91482C10.4996 8.76821 10.6026 8.59521 10.6672 8.40676C10.7318 8.21832 10.7565 8.01852 10.74 7.82V6.39H19.3599V7.82C19.3434 8.01852 19.3681 8.21832 19.4327 8.40676C19.4973 8.59521 19.6003 8.76821 19.7352 8.91482C19.87 9.06143 20.0339 9.17846 20.2163 9.25851C20.3987 9.33856 20.5957 9.3799 20.795 9.3799C20.9942 9.3799 21.1912 9.33856 21.3736 9.25851C21.556 9.17846 21.7199 9.06143 21.8547 8.91482C21.9896 8.76821 22.0926 8.59521 22.1572 8.40676C22.2218 8.21832 22.2465 8.01852 22.2299 7.82V6.39H25.0999C25.4792 6.39 25.8429 6.54066 26.1111 6.80884C26.3793 7.07701 26.5299 7.44074 26.5299 7.82L26.4799 12.13Z" fill="currentColor"></path></svg>
+                  </label>
+                  <div id="dates-picker-input-9" class="dates-picker-input form-control position-relative form-control border-0">
+                        <div  class="text-truncate text-muted">Scegli le tue date</div> 
+                  </div>
+                </div>
+              </div>
+              <!-- INIZIO TERZO INPUT -->
+              <button type="submit" class="btn w-100 btn-warning btn-block px-0 py-3">
+                <span>
+                  <svg class="fa-base me-1" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.0501 21.94L25.0501 18.88C24.4059 18.2707 23.5947 17.8673 22.7201 17.7212C21.8455 17.5752 20.9473 17.6931 20.1401 18.06L18.8401 16.76C20.3784 14.7155 21.0844 12.1637 20.8155 9.61925C20.5467 7.07477 19.3231 4.72686 17.3915 3.04894C15.4599 1.37102 12.9639 0.487901 10.4069 0.577654C7.84979 0.667407 5.42187 1.72336 3.61265 3.53258C1.80342 5.34181 0.74747 7.76973 0.657717 10.3268C0.567964 12.8838 1.45108 15.3798 3.129 17.3115C4.80693 19.2431 7.15484 20.4667 9.69931 20.7355C12.2438 21.0043 14.7955 20.2984 16.8401 18.76L18.1301 20.04C17.7183 20.8483 17.5702 21.7653 17.7065 22.6621C17.8428 23.559 18.2567 24.3905 18.8901 25.04L21.9601 28.1C22.7944 28.7779 23.8497 29.1237 24.9234 29.0709C25.9971 29.0182 27.0135 28.5706 27.7774 27.8142C28.5412 27.0578 28.9987 26.0459 29.0619 24.9727C29.1252 23.8996 28.7898 22.8409 28.1201 22L28.0501 21.94ZM15.8001 15.82C14.7898 16.8284 13.5033 17.5147 12.1031 17.7922C10.7029 18.0697 9.25191 17.926 7.9334 17.3791C6.61489 16.8323 5.48807 15.9069 4.69531 14.7198C3.90255 13.5328 3.47944 12.1374 3.47944 10.71C3.47944 9.28258 3.90255 7.88719 4.69531 6.70016C5.48807 5.51312 6.61489 4.58771 7.9334 4.04085C9.25191 3.494 10.7029 3.35025 12.1031 3.62776C13.5033 3.90527 14.7898 4.59159 15.8001 5.6C16.4719 6.27061 17.0049 7.06712 17.3686 7.94396C17.7322 8.82079 17.9194 9.76073 17.9194 10.71C17.9194 11.6593 17.7322 12.5992 17.3686 13.476C17.0049 14.3529 16.4719 15.1494 15.8001 15.82ZM26.0001 26C25.7316 26.2591 25.3731 26.4038 25.0001 26.4038C24.627 26.4038 24.2685 26.2591 24.0001 26L20.9001 23C20.641 22.7316 20.4962 22.3731 20.4962 22C20.4962 21.6269 20.641 21.2684 20.9001 21C21.1685 20.7409 21.527 20.5961 21.9001 20.5961C22.2731 20.5961 22.6316 20.7409 22.9001 21L26.0001 24C26.2591 24.2684 26.4039 24.6269 26.4039 25C26.4039 25.3731 26.2591 25.7316 26.0001 26Z" fill="currentColor"></path></svg>
+                </span>
+                 Trova la barca 
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+      <div class="container">
+        <div class="row mt-5 justify-content-around ">
+          <div class="col-11 col-md-5 mt-3 cardCity1 position-relative p-0">
+            <picture>
+              <img class="img-fluid m-0 h-100 rounded-3" titolo="Sardegna" src="./media/sardegna.jpg" alt="">
+            </picture>
+            <div class="position-absolute w-100 h-100 rounded-3 d-none top-0 p-5 bg-warning opacity-50 d-flex justify-content-center align-items-center"> <h2 class="TextBox">SARDEGNA</h2> </div>
+          </div>
+          <div class="col-11 col-md-3 mt-3 p-0 cardCity2">
+            <picture>
+              <img class="img-fluid m-0 h-100 rounded-3"  src="./media/sicilia.jpg" alt="">
+            </picture>
+          </div>
+          <div class="col-11 col-md-3 mt-3 cardCity3">
+
+          </div>
+        </div>
+      </div>
     </main>
     <!-- FINE MAIN -->
     
@@ -151,7 +250,7 @@
 
 
 
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
