@@ -25,9 +25,11 @@
     <nav class="navbar m-4 navbar-expand-lg fixed-top">
         <div class="container-fluid">
           <img class="navLogo" src="./media/LogoWhite.png" alt=""><h2 class="mt-1 me-5 textLogo">Presto<p class="punto d-inline-block">.</p>it</h2>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="my-1 mx-2 fs-1 lead close">X</span>
             <span class="navbar-toggler-icon"></span>
           </button>
+         
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
@@ -44,7 +46,20 @@
               </li>
             </ul>
             <div class=" d-flex" >
-              <span class="ms-auto px-3" ><i class="fa-solid iconNavCustom fa-xl fa-magnifying-glass"></i></span><span class="iconNav px-3"><i class="fa-solid fa-xl iconNavCustom fa-user"></i></span>
+              <!-- <span class="ms-auto px-3" ><i class="fa-solid iconNavCustom fa-xl fa-magnifying-glass"></i></span> -->
+              <span class="iconNav my-3 my-md-0 px-3"><i id="iconaLog" class="fa-solid fa-xl iconNavCustom fa-user"></i></span>
+
+              <div id="logInBox" class="logInBox d-none">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1"><i class="fa-solid  fa-user"></i></span>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-key"></i></span>
+                  <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                </div>
+                <button class="buttonLog" type="submit">Entra</button>
+              </div>
             </div>
           </div>
         </div>
@@ -109,7 +124,7 @@
           </div>
         </div>
       </div>
-
+      
        <!-- <span class="container-fluid d-flex justify-content-center" data-aos="fade-right" 
         data-aos-delay="200" data-aos-duration="3000">
             <h2 class="text-center titleMain rounded-1"><p class="puntoMain d-inline-block lead">.</p>INFO</h2>
@@ -167,8 +182,8 @@
         </div>
         <div class="container-fluid ">
           
-          <div class="row section2 justify-content-start align-items-center mb-5">
-            <div class="col-12 col-md-3 ms-md-5 boxRicerca">
+          <div class="row section2 justify-content-md-start justify-content-center align-items-center mb-5">
+            <div class="col-11 col-md-3 ms-md-5 boxRicerca">
             <h2 class="citazione">Noleggio Barche</h2>
             <p class="text-center">Confronta oltre 5.000 barche e prenota in tutto il mondo.</p>
               <div class="mb-3 pb-1">
@@ -204,27 +219,74 @@
         </div>
       </div>
       </div>
-
-
-
-
+      <div class="text-center mb-5">
+        <h2 class="titoloSectionCard">Oltre 5000 barche a noleggio in Europa e nel mondo</h2>
+      </div>
       <div class="container">
         <div class="row mt-5 justify-content-around ">
-          <div class="col-11 col-md-5 mt-3 cardCity1 position-relative p-0">
+          <div class="col-11 col-md-5 mt-3 cardCity1  p-0">
             <picture>
-              <img class="img-fluid m-0 h-100 rounded-3" titolo="Sardegna" src="./media/sardegna.jpg" alt="">
+              <img class="image1 image-cover m-0 h-100 rounded-3" titolo="Sardegna" src="./media/sardegna.jpg" alt="">
+              <div id="TextBox1"class="w-100 h-100 rounded-3 d-none top-0 p-5 bg-BeigeLux  d-flex justify-content-center align-items-center"> <h2 class="TextBox">SARDEGNA</h2> </div>
             </picture>
-            <div class="position-absolute w-100 h-100 rounded-3 d-none top-0 p-5 bg-warning opacity-50 d-flex justify-content-center align-items-center"> <h2 class="TextBox">SARDEGNA</h2> </div>
+            
           </div>
           <div class="col-11 col-md-3 mt-3 p-0 cardCity2">
             <picture>
-              <img class="img-fluid m-0 h-100 rounded-3"  src="./media/sicilia.jpg" alt="">
+              <img class="image2 image-cover m-0 h-100 rounded-3"  src="./media/sicilia.jpg" alt="">
+              <div id="TextBox2"class="w-100 h-100 rounded-3 d-none top-0 p-5 bg-BeigeLux  d-flex justify-content-center align-items-center"> <h2 class="TextBox">SICILIA</h2> </div>
             </picture>
           </div>
-          <div class="col-11 col-md-3 mt-3 cardCity3">
-
+          <div class="col-11 col-md-3 mt-3 p-0 cardCity3">
+            <picture>
+              <img class="image3 m-0 h-100 rounded-3 image-cover"  src="./media/grecia.jpg" alt="">
+              <div id="TextBox3"class="w-100 h-100 rounded-3 d-none top-0 p-5 bg-BeigeLux  d-flex justify-content-center align-items-center"> <h2 class="TextBox">GRECIA</h2> </div>
+            </picture>
           </div>
         </div>
+        <div class="row mt-md-5 m-0 justify-content-around ">
+          <div class="col-12 col-md-5 mt-3 m-md-0 cardCity4 pe-md-3 p-1 ps-md-0">
+            <picture>
+              <img class="image4 image-cover m-0 h-100 rounded-3" titolo="Sardegna" src="./media/croazia.jpg" alt="">
+              <div id="TextBox4"class="w-100 h-100 rounded-3 d-none top-0 p-5 bg-BeigeLux  d-flex justify-content-center align-items-center"> <h2 class="TextBox ">CROAZIA</h2> </div>
+            </picture>
+          </div>
+          <div class="col-12 col-md-7 ps-md-4 mt-3 m-md-0 pe-md-0 p-1 cardCity5">
+            <picture>
+              <img class="image5 image-cover m-0 h-100 rounded-3"  src="./media/napoli.jpg" alt="">
+              <div id="TextBox5"class="w-100 h-100 rounded-3 d-none top-0 p-5 bg-BeigeLux  d-flex justify-content-center align-items-center"> <h2 class="TextBox">NAPOLI</h2> </div>
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5 px-2">
+        <h2 class="titoloSectionCard mt-5">Trova la barca ideale per le tue esigenze</h2>
+      </div>
+      <div class="container">
+
+        <div class="row mt-md-5 m-0 justify-content-between ">
+            <div class="col-12 col-md-3 cardBoat1">
+              
+            </div>
+            <div class="col-12 col-md-3 cardBoat1">
+              <picture>
+                <img class="image4 image-cover m-0 h-100 rounded-3" titolo="Sardegna" src="./media/croazia.jpg" alt="">
+                <div id="TextBox4"class="w-100 h-100 rounded-3 d-none top-0 p-5 bg-BeigeLux  d-flex justify-content-center align-items-center"> <h2 class="TextBox ">CROAZIA</h2> </div>
+              </picture>
+            </div>
+            <div class="col-12 col-md-3 cardBoat1">
+              <picture>
+                <img class="image4 image-cover m-0 h-100 rounded-3" titolo="Sardegna" src="./media/croazia.jpg" alt="">
+                <div id="TextBox4"class="w-100 h-100 rounded-3 d-none top-0 p-5 bg-BeigeLux  d-flex justify-content-center align-items-center"> <h2 class="TextBox ">CROAZIA</h2> </div>
+              </picture>
+            </div>
+            <div class="col-12 col-md-3 cardBoat1">
+              <picture>
+                <img class="image4 image-cover m-0 h-100 rounded-3" titolo="Sardegna" src="./media/croazia.jpg" alt="">
+                <div id="TextBox4"class="w-100 h-100 rounded-3 d-none top-0 p-5 bg-BeigeLux  d-flex justify-content-center align-items-center"> <h2 class="TextBox ">CROAZIA</h2> </div>
+              </picture>
+            </div>
+          </div>
       </div>
     </main>
     <!-- FINE MAIN -->

@@ -10,6 +10,23 @@ let iconNav= document.querySelectorAll(".iconNav")
 let iconNavCustom= document.querySelectorAll(".iconNavCustom")
 let containerMainSection2 = document.querySelectorAll(".containerMainSection2")
 let elementCircleCard = document.querySelector(".elementCircleCard")
+let iconaLog = document.querySelector("#iconaLog")
+let logInBox = document.querySelector("#logInBox")
+let cardCity1 = document.querySelector(".cardCity1")
+let TextBox1 = document.querySelector("#TextBox1")
+let image1 = document.querySelector(".image1")
+let cardCity2 = document.querySelector(".cardCity2")
+let TextBox2 = document.querySelector("#TextBox2")
+let image2 = document.querySelector(".image2")
+let cardCity3 = document.querySelector(".cardCity3")
+let TextBox3 = document.querySelector("#TextBox3")
+let image3 = document.querySelector(".image3")
+let cardCity4 = document.querySelector(".cardCity4")
+let TextBox4 = document.querySelector("#TextBox4")
+let image4 = document.querySelector(".image4")
+let cardCity5 = document.querySelector(".cardCity5")
+let TextBox5 = document.querySelector("#TextBox5")
+let image5 = document.querySelector(".image5")
 
 
 // CONTATORE
@@ -145,12 +162,35 @@ containerMainSection2.forEach((box)=>{
 })
 
 
+// AL CLIC DELL ICONA USER ESCE IL BOX PER USER E PSW
+iconaLog.addEventListener("click",()=>{
+    logInBox.classList.toggle("d-none")
+})
 
 
+// HOVER PER LE CARD DELLE CITTA
 
 
+function hoverCard (blocco,testo,image){
+    blocco.addEventListener("mouseenter",()=>{
+        testo.classList.remove("d-none")
+        image.classList.add("d-none")
 
+    
+    })
+    
+    blocco.addEventListener("mouseleave",()=>{
+        testo.classList.add("d-none")
+        image.classList.remove("d-none")
 
+    
+    })
+}
+hoverCard(cardCity1,TextBox1,image1)
+hoverCard(cardCity2,TextBox2,image2)
+hoverCard(cardCity3,TextBox3,image3)
+hoverCard(cardCity4,TextBox4,image4)
+hoverCard(cardCity5,TextBox5,image5)
 
 function inizocontatore(numero,elemento,timing,counterNum){
 
@@ -167,6 +207,8 @@ function inizocontatore(numero,elemento,timing,counterNum){
     },timing )
 
 }
+
+
 
 
 

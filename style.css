@@ -44,15 +44,16 @@ h1,h2,h3,h4,h5,h6{
 }
 .bg-White{
     background-color: var(--ColorWhite);
-    
 }
-
+.bg-BeigeLux{
+    background-color: var(--ColorBeigeLux);
+}
 
 
 /* NAVBAR STYLE */
 
 .navbar{
-    
+   
     background-color: var(--ColorBeigeLux);
     /* box-shadow: 0px 0px 10px 0px rgb(255, 255, 255); */
     transition: .5s;
@@ -83,9 +84,12 @@ h1,h2,h3,h4,h5,h6{
     padding-right: 10px;
 }
 .iconNav{
-    border-left: 2px solid var(--ColorWhite);
+    position: relative;
+
+    /* border-left: 2px solid var(--ColorWhite); */
 }
 .iconNavCustom{
+    cursor: pointer;
     color: var(--ColorBlueLux);
     /* text-shadow: 1px -1px 0px rgba(96, 96, 96, 1); */
    
@@ -108,7 +112,36 @@ h1,h2,h3,h4,h5,h6{
     height: 9vh;
 
 }
+.logInBox{
+    background-color: var(--ColorWhiteLux);
+    height: 170px;
+    width: 220px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50px;
+    right: 55px;
+    border-top-right-radius: 0px;
 
+    
+}
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+
+
+.buttonLog{
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    background-color: var(--ColorOrange);
+
+}
 
 /* HEADER STYLE */
 
@@ -307,23 +340,39 @@ h1,h2,h3,h4,h5,h6{
     background-color: var(--ColorWhiteLux);
     border-radius: 20px;
 }
-.cardCity1,.cardCity2,.cardCity3{
+.cardCity1,.cardCity2,.cardCity3,.cardCity4,.cardCity5{
     height: 310px;
-    background-color: var(--ColorWhite);
+
 
     border-radius: 10px;
 }
 
 .TextBox{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 8em;
+    font-size: 6em;
+    color: var(--ColorBlueLux);
 }
 
-
-
-
-
-
+.image-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+.titoloSectionCard{
+    color:var(--ColorBlueLux);
+    justify-content: center;
+    display: inline;
+    font-size: 35px;
+    border-bottom: 3px solid var(--ColorBeigeLux);
+}
+.cardBoat1{
+    margin: 1px;
+    border-radius: 20px;
+    padding: 5px;
+    background-image: url(media/croazia.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 
 
@@ -357,5 +406,24 @@ h1,h2,h3,h4,h5,h6{
     .titoloCentrale{
         text-align: center;
         display: block;
+    }
+    .TextBox{
+        font-size: 4em;
+    }
+    .titolo,.titolo2{
+        font-size: 50px;
+    }
+    .logInBox{
+        position: relative;
+        top:0px;    
+        left: 30px;
+        background-color: transparent;
+        height: 160px;
+        width: 220px;
+        padding: 0;
+        border-radius: 10px;
+        margin-bottom: 0px;
+           
+    
     }
   }
