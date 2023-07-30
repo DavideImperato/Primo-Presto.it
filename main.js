@@ -112,10 +112,10 @@ window.addEventListener("scroll",()=>{
     if(scrollPage>210){
         setTimeout(()=>{
             if(check==false){
-                inizocontatore(numeroN1,numero1,1,10)
-                inizocontatore(numeroN2,numero2,5,10)
-                inizocontatore(numeroN3,numero3,5,1)
-                inizocontatore(numeroN4,numero4,0,40)
+                inizocontatore(numeroN1,numero1,10,10)
+                inizocontatore(numeroN2,numero2,15,10)
+                inizocontatore(numeroN3,numero3,15,1)
+                inizocontatore(numeroN4,numero4,10,40)
 
                 check=true
             }
