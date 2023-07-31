@@ -1,0 +1,97 @@
+[
+    {
+        "id":1,
+        "name": "Jeanneau Cap Camarat 9.0 WA - 2021",
+        "category": "Barca a Motore",
+        "price": "390",
+        "image":"https://foto.inautia.it/barcosOcasion/8/7/6/6/jeanneau-cap-camarat-90-wa-69517060192757577050546952674566x.jpg"
+    },
+    {
+        "id":2,
+        "name": "Blumax 19 pro",
+        "category": "Barca a Motore",
+        "price": "150",
+        "image":"https://static1.clickandboat.com/v1/p/H7Tma2uVnCNKOj4l6BL1hXqFAEjfiAc8.big.jpg"
+        
+    },
+    {
+        "id":3,
+        "name": "Selva Open Elegant 5.7",
+        "category": "Barca a Motore",
+        "price": "200",
+        "image":"https://images.boats.com/resize/1/95/56/8519556_20220930011428248_1_XLARGE.jpg?t=1664525528000"
+        
+    },
+    {
+        "id":4,
+        "name": "Dufour 520 Grand Large",
+        "category": "Barca a Vela",
+        "price": "360",
+        "image":"https://media.boatsnews.it/src/images/news/articles/ima-image-26366.jpg"
+        
+    },
+    {
+        "id":5,
+        "name": "Cantiere Del Pardo Grand Soleil 40",
+        "category": "Barca a Vela",
+        "price": "400",
+        "image":"https://foto.inautia.it/barcosOcasion/1/9/6/9/cantiere-del-pardo-grand-soleil-40-21116070190867706653686548504570x.jpg"
+        
+    },
+    {
+        "id":6,
+        "name": "Jeanneau Sun Odyssey 410",
+        "category": "Barca a Vela",
+        "price": "500",
+        "image":"https://app.jeanneau.com/static/media/image/exterior/sd/45be4f3fb886b62cb9396887ccbcc85c.jpg"
+        
+    },
+    {
+        "id":7,
+        "name": "Altamarea Wave 20",
+        "category": "Gommone",
+        "price": "90",
+        "image":"https://www.ilgommone.net/wp-content/uploads/2020/07/56.jpg"
+        
+    },
+    {
+        "id":8,
+        "name": "Scanner 999 WA",
+        "category": "Gommone",
+        "price": "1200",
+        "image":"https://www.scanner-marine.com/wp-content/uploads/2013/02/ONE-999-WAelegance-line.jpg"
+        
+    },
+    {
+        "id":9,
+        "name": "Italboats Predator 599 AS",
+        "category": "Barca a Vela",
+        "price": "230",
+        "image":"https://img.happycharter.com/image-charter-boat/italboats-predator-599-huge-23516a96a0eb317b.jpg"
+        
+    },
+    {
+        "id":10,
+        "name": "Bali Catamarans Bali 4.6",
+        "category": "Catamarano",
+        "price": "850",
+        "image":"https://bali-catamarans.hr/images/ownership/yacht-images/bali-46/bali-46-heading_bg.jpg"
+        
+    },
+    {
+        "id":11,
+        "name": "Nautitech 46 Fly",
+        "category": "Catamarano",
+        "price": "710",
+        "image":"https://images.boatsgroup.com/resize/1/17/99/8801799_20230410160210821_1_XLARGE.jpg"
+        
+    },
+    {
+        "id":12,
+        "name": "Sunreef 70",
+        "category": "Catamarano",
+        "price": "9000",
+        "image":"https://sailogy-pictures-public.imgix.net/uploads/pictures/2023/1/20/su/21016/sunreef-70-exterior-04.jpg"
+        
+    }
+]

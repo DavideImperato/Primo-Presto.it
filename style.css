@@ -94,6 +94,9 @@ h1,h2,h3,h4,h5,h6{
     /* text-shadow: 1px -1px 0px rgba(96, 96, 96, 1); */
    
 }
+.linkHome{
+    text-decoration: none;
+}
 .punto{
     display: inline;
     margin: 0;
@@ -156,7 +159,16 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     /* background-attachment: fixed; */
 }
-
+.headerCustomNoleggia{
+    width: 100%;
+    height: 50vh;
+    background:linear-gradient(rgba(255,255,255,0)60%, rgba(255,255,255,1)90%),url(./media/sfondo_header4.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: top;
+    display: flex;
+    /* background-attachment: fixed; */
+}
 
 .titolo{
     font-size: 80px;
@@ -388,9 +400,97 @@ h1,h2,h3,h4,h5,h6{
     animation-fill-mode: both;
 }
 
+.sectionRecensione{
+    margin-top: 50px;
+    min-height: 100vh;
+    background:url(media/wave.svg),var(--ColorBlueLux);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
+}
+.swiper {
+    width: 90%;
+    height: 70vh;
+  }
 
+  .cta {
+    border: none;
+    background: none;
+  }
+  
+  .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  
+  .cta .iconrew {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover .iconrew {
+    transform: translateX(0);
+  }
+  
+  .cta:active .iconrew {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: var(--ColorBeigeLux);
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--ColorBeigeLux);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+  /* PAGINA ARTICOLO */
+
+  .cardArticle{
+    background-color: var(--ColorWhite);
+    width: 20rem;
+    max-height: 450px;
+    height: auto;
+  }
+  .imageCoverArticle {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    object-fit: cover;
+    height: 200px;
+  }
+  .accordion{
+    color: var(--ColorBlueLux);
+    --bs-accordion-active-bg:var(--ColorBeigeLux);
+    --bs-accordion-btn-focus-border-color:var(--ColorBeigeLux) !important;
+    box-shadow: none;
+  }
+  .accordion-button:focus{
+    box-shadow: none;
+  }
+  .accordion-button{
+    color: var(--ColorBlueLux);
+  }
 
 
 

@@ -27,6 +27,18 @@ let image4 = document.querySelector(".image4")
 let cardCity5 = document.querySelector(".cardCity5")
 let TextBox5 = document.querySelector("#TextBox5")
 let image5 = document.querySelector(".image5")
+let swiperWrapper = document.querySelector("#swiperWrapper")
+let ctaBtn = document.querySelector(".cta")
+let formRecensione = document.querySelector("#formRecensione")
+let testoScriviRecensione = document.querySelector("#testoScriviRecensione")
+let iconaScriviRecensione = document.querySelector("#iconaScriviRecensione")
+let checkScriviRecensione = false;
+let userNuovaRecensione = document.querySelector("#userNuovaRecensione")
+let cittaNuovaRecensione = document.querySelector("#cittaNuovaRecensione")
+let paeseNuovaRecensione = document.querySelector("#paeseNuovaRecensione")
+let NuovaRecensione = document.querySelector("#NuovaRecensione")
+let addRecensioneBtn = document.querySelector("#addRecensioneBtn")
+
 
 
 // CONTATORE
@@ -214,10 +226,117 @@ function inizocontatore(numero,elemento,timing,counterNum){
 
 
 
+let recensioni=[
+    { name : "Davide" , description : "Ottima Esperienza,Super Affidabili!",city : "Napoli" , country:"Italia" },
+    { name : "Lorenzo" , description : "Una Vacanca Magnifica!!!",city : "Napoli" , country:"Italia" },
+    { name : "Andrea" , description : "super organizzati, assistenza top, consigliatissimo!",city : "Roma" , country:"Italia" },
+    { name : "Raul" , description : "Tutto bene. Barca bella. Velocità nella consegna è spiegazioni dettagliate sull'uso della barca e itinerario da seguire. Bravi",city : "Ibiza" , country:"Spagna" },
+    { name : "Greta" , description : "Esperienza unica e fantastica .Fabrizio il proprietario, persona splendida con grande disponibilità Massimo skipper il Top. La Barca bellissima e super comoda. Esperienza da ripetere",city : "Genova" , country:"Italia" },
+
+
+
+
+]
+addRecensioneBtn.addEventListener("click",()=>{
+    
+    recensioni.push({ name : userNuovaRecensione.value , description : NuovaRecensione.value ,city : cittaNuovaRecensione.value , country: paeseNuovaRecensione.value });
+    console.log(recensioni);
+    generateCard();
+    userNuovaRecensione.value="";
+    NuovaRecensione.value="";
+    cittaNuovaRecensione.value="";
+    paeseNuovaRecensione.value="";
+    swiper.update();
+})
+
+
+function generateCard() {
+    swiperWrapper.innerHTML="";
+    recensioni.forEach((review) =>{
+        let div = document.createElement('div');
+        div.classList.add("swiper-slide");
+        div.innerHTML = `
+        <div class="card cardRecensione" >
+        <div class="card-body ">
+          <div class="text-center  mt-auto"><i class="bi bi-star-fill fs-3 text-warning"></i><i class="bi fs-2 bi-star-fill text-warning"></i><i class="bi fs-1 bi-star-fill text-warning"></i><i class="bi fs-2 bi-star-fill text-warning"></i><i class="bi fs-3 bi-star-fill text-warning"></i></div>
+          <h5 class="card-title mt-5 mb-3">${review.name}</h5>
+          <h6 class="card-subtitle mb-5 mt-3 text-body-secondary">${review.city},${review.country}</h6>
+          <p class="card-text mt-2">${review.description}</p>
+        </div>
+      </div>
+        `
+        swiperWrapper.appendChild(div);
+    });
+}
+generateCard();
+
+
+
+ctaBtn.addEventListener("click",()=>{
+    if(checkScriviRecensione==false){
+        formRecensione.classList.remove("d-none")
+        testoScriviRecensione.innerHTML=" Chiudi "
+        iconaScriviRecensione.classList.remove("bi-pencil-square")
+        iconaScriviRecensione.classList.add("bi-x-lg")
+        checkScriviRecensione=true;
+    
+    }else{
+        formRecensione.classList.add("d-none")
+        testoScriviRecensione.innerHTML=" Scrivi una recensione "
+        iconaScriviRecensione.classList.remove("bi-x-lg")
+        iconaScriviRecensione.classList.add("bi-pencil-square")
+        checkScriviRecensione=false;
+    }
+    
+
+
+
+})
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+const swiper = new Swiper('.swiper', {
+
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+  });
+  
+  
+  
 
 
