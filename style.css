@@ -491,6 +491,20 @@ h1,h2,h3,h4,h5,h6{
   .accordion-button{
     color: var(--ColorBlueLux);
   }
+  .form-check-input:checked{
+    background-color: var(--ColorBeigeLux);
+    border-color: var(--ColorBeigeLux);
+
+  }
+  .form-check-input:focus{
+    box-shadow: var(--ColorBlueLux);
+  }
+  .ordinaper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+  }
 
 
 

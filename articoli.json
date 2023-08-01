@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "name": "Jeanneau Cap Camarat 9.0 WA - 2021",
+        "name": "Jeanneau Cap Camarat 9.0",
         "category": "Barca a Motore",
         "price": "390",
         "image":"https://foto.inautia.it/barcosOcasion/8/7/6/6/jeanneau-cap-camarat-90-wa-69517060192757577050546952674566x.jpg"
@@ -32,7 +32,7 @@
     },
     {
         "id":5,
-        "name": "Cantiere Del Pardo Grand Soleil 40",
+        "name": "Grand Soleil 40",
         "category": "Barca a Vela",
         "price": "400",
         "image":"https://foto.inautia.it/barcosOcasion/1/9/6/9/cantiere-del-pardo-grand-soleil-40-21116070190867706653686548504570x.jpg"
@@ -94,4 +94,5 @@
         "image":"https://sailogy-pictures-public.imgix.net/uploads/pictures/2023/1/20/su/21016/sunreef-70-exterior-04.jpg"
         
     }
+    
 ]

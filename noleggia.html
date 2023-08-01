@@ -87,20 +87,23 @@
     <!-- INIZIO MAIN -->
     <div class="container-fluid mt-5">
         <div class="row mt-5">
-            <div class="col-12 col-md-3 px-4">
+            <div class="col-12 mt-5 pt-5 col-md-3 px-4">
                 <h5 class="tx-BlueLux">Filtra per:</h5>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Categoria
-                        </button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Categoria
+                          </button>
                       </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div id="categoriesWrepper" class="accordion-body">
                             <div class="form-check">
-                                
-                              </div>
+                                <input class="form-check-input" checked type="radio" name="category" id="all">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    Tutte le categorie
+                                    </label>
+                            </div>
                         </div>
                       </div>
                     </div>
@@ -110,9 +113,10 @@
                           Prezzo
                         </button>
                       </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <input class="w-100" type="range" name="" id="priceInput">
+                          <p id="priceNumber"></p>
                         </div>
                       </div>
                     </div>
@@ -122,18 +126,22 @@
                           Parola
                         </button>
                       </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <input id="wordInput" class="form-control" type="text">
                         </div>
                       </div>
                     </div>
                   </div>
             </div>
-            <div id="cardWrapper" class="col-12 col-md-9 d-flex flex-wrap">
-                
-                  
-                 
+            <div class=" col-12 col-md-9 mt-5 justify-content-center">
+                <div class="ordinaper me-5">Ordina per prezzo: <i id="sortBy" type="button" class="bi mx-2 bi-sort-numeric-down fa-xl"></i></div>
+                <div id="cardWrapper" class="d-flex flex-wrap">
+                    
+                    
+                      
+                     
+                </div>
             </div>
         </div>
     </div>
